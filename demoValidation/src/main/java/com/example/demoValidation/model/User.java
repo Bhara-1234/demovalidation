@@ -5,7 +5,16 @@ import javax.validation.constraints.*;
 public class User {
 	@NotBlank
 	String name;
+	String profission;
 	
+	public String getProfission() {
+		return profission;
+	}
+
+	public void setProfission(String profission) {
+		this.profission = profission;
+	}
+
 	@Email
 	String email;
 	
